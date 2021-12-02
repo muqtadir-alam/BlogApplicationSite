@@ -1,0 +1,3 @@
+export const USER_REGISTER = 'USER_REGISTER';
+export const GET_ALL_POSTS = 'GET_ALL_POSTS';
+export const GET_POST_DETAILS = 'GET_POST_DETAILS';

@@ -31,7 +31,7 @@ const Comment = ({ comment, setToggle }) => {
 	const classes = useStyles();
 
 	const removeComment = async () => {
-		await deleteComment(comment._id);
+		await deleteComment(comment?._id);
 		setToggle(prev => !prev);
 	};
 

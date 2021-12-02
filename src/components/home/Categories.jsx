@@ -22,7 +22,9 @@ const useStyle = makeStyles({
 		background: '#6495ED',
 		color: '#fff',
 		textDecoration: 'none',
+		fontWeight: 'bold',
 	},
+
 	link: {
 		textDecoration: 'none',
 		color: 'inherit',
@@ -45,16 +47,16 @@ const Categories = ({ match }) => {
 
 			<Table className={classes.table}>
 				<TableHead>
-					<TableCell>
+					<TableCell className={classes.write}>
 						<Link to={'/'} className={classes.link}>
 							All Categories
 						</Link>
 					</TableCell>
 				</TableHead>
 				<TableBody>
-					{categories.map(category => (
+					{categories?.map(category => (
 						<TableRow>
-							<TableCell>
+							<TableCell className={classes.write}>
 								<Link to={`/?category=${category}`} className={classes.link}>
 									{category}
 								</Link>

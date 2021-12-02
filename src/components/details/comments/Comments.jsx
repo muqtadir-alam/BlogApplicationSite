@@ -53,7 +53,7 @@ const Comments = ({ post }) => {
 
 	useEffect(() => {
 		const getData = async () => {
-			const response = await getComments(post._id);
+			const response = await getComments(post?._id);
 			setComments(response);
 		};
 		getData();
