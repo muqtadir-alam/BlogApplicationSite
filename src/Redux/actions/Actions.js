@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { GET_ALL_POSTS, GET_POST_DETAILS } from '../actionType/ActionType';
 
-const url = 'http://localhost:8000';
+const url = 'https://blog-muqtadir.herokuapp.com';
 
 export const uploadFile = async post => {
 	console.log(post);
@@ -92,7 +92,7 @@ export const deletePost = id => dispatch => {
 			.then(res => {
 				console.log(res);
 
-				// window.location.href = '#/';
+				window.location.href = '/';
 			})
 			.catch(err => console.log(err));
 	} catch (error) {

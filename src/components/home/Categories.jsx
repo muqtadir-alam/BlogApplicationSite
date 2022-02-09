@@ -49,7 +49,7 @@ const Categories = ({ match }) => {
 				<TableHead>
 					<TableCell className={classes.write}>
 						<Link to={'/'} className={classes.link}>
-							All Categories
+							All Streams
 						</Link>
 					</TableCell>
 				</TableHead>
